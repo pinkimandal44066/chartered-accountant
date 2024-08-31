@@ -10,6 +10,7 @@ import Taxplanning from './Components/Taxplanning';
 import Auditing from './Components/Auditing';
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import FAQ from "./Components/Faq";
 
 const App = () => {
   return (
@@ -21,11 +22,12 @@ const App = () => {
             <Route path="/about-us" element={<Aboutus />} />
             <Route path="/service" element={<Services />} />
             <Route path="/enquiry" element={<Enquiry />} />
-            <Route path="/enquiry" element={<Enquiry />} />
+            {/* <Route path="/enquiry" element={<Enquiry />} /> */}
             <Route path="/contact-us" element={<Contactus />} />
             <Route path="/accounting" element={<Accounting />} />
             <Route path="/Taxplanning" element={<Taxplanning />} />
             {/* <Route path="/Auditing" element={<Auditing />} /> */}
+            <Route path="/faq" element={<FAQ />} />
           </Route>
         </Routes>
       </Router>

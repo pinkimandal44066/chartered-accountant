@@ -21,12 +21,12 @@ const Navbar = () => {
 
   return (
     <div style={{ fontFamily: "Century Gothic" }} className="w-full">
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative " }}>
         <NavLink to="/">
           <img
             src={logo}
             alt=""
-            className="w-16 rounded-xl"
+            className="w-16 lg:w-24 rounded-xl lg:mt-4 lg:mx-24 md:mx-20 "
             style={{
               position: "absolute",
               left: 0,
@@ -52,9 +52,10 @@ const Navbar = () => {
 
       {/* navbar */}
       <nav>
-        <div className="container mx-auto flex justify-between items-center cursor-pointer">
-          <div className="left flex items-center">
-            <div className="absolute lg:top-5 top-0 right-0 md:top-5 md:right-20 lg:right-32 p-2 bg-blue-600  text-white rounded-full">
+        <div className="container mx-auto flex justify-between items-center cursor-pointer ">
+          <div className="left flex items-center ">
+            <div className="absolute lg:top-5 top-0 right-0 md:top-5   
+            md:right-20 lg:right-32 p-2 bg-blue-600  text-white rounded-full">
               <FiMenu
                 onClick={() => setMenu(true)}
                 className="lg:text-4xl md:text-4xl text-2xl cursor-pointer"
@@ -63,7 +64,7 @@ const Navbar = () => {
           </div>
 
           {isSideMenuOpen && (
-            <div className="fixed h-screen w-full z-[999] font-Poppins  cursor-pointer  bg-black bg-opacity-50 backdrop-blur-sm top-0 right-0">
+            <div className="fixed h-screen w-full z-[999] font-Poppins   cursor-pointer  bg-black bg-opacity-50 backdrop-blur-sm top-0 right-0">
               <section className="text-black bg-gray-100 flex-col absolute left-0 top-0 h-screen p-8 gap-8 z-50 w-full text-center flex">
                 <IoCloseOutline
                   onClick={() => setMenu(false)}
@@ -103,7 +104,7 @@ const Navbar = () => {
                   Services
                 </NavLink>
 
-                <NavLink
+                {/* <NavLink
                   to="/enquiry"
                   className={({ isActive }) =>
                     `  ${
@@ -112,7 +113,7 @@ const Navbar = () => {
                   }
                 >
                   Enquiry
-                </NavLink>
+                </NavLink> */}
 
 
 

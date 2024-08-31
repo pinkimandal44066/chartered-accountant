@@ -154,7 +154,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -189,10 +189,20 @@ const Footer = () => {
             <div className="flex flex-col">
               <div>
                 <h1 className="text-lg font-semibold">COMPANY</h1>
+                <NavLink to='/'>
+                <p className="mt-2">Home</p>
+                </NavLink>
+                <NavLink to='/about-us'>
                 <p className="mt-2">About Us</p>
-                <p className="mt-2">Our Team</p>
+                </NavLink>
+
+                <NavLink to='/service'>
+                <p className="mt-2">Services</p>
+                </NavLink>
+                <NavLink to='/contact-us'>
+                <p className="mt-2">Contact Us</p>
+                </NavLink>
                 <p className="mt-2">Careers</p>
-                <p className="mt-2">Contact</p>
               </div>
             </div>
 
@@ -201,7 +211,9 @@ const Footer = () => {
               <div>
                 <h1 className="text-lg font-semibold">RESOURCES</h1>
                 <p className="mt-2">Blog</p>
+                <NavLink to='/faq'>
                 <p className="mt-2">FAQs</p>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -272,7 +284,7 @@ const Footer = () => {
       <hr className="border border-white lg:mx-20 mx-4 lg:mt-10 mt-5" />
 
       <div className="lg:mx-20 mx-4 mt-5 mb-20">
-        <h1 className="text-xl font-medium mb-40">POWERED BY Pinki Kumari</h1>
+        <h1 className="text-xl font-medium mb-40">POWERED BY aaaaaaaaaaaaaaaaaaaa</h1>
       </div>
     </div>
   );
