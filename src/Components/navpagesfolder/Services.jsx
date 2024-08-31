@@ -752,7 +752,7 @@ const ServicesOverview = () => {
           </NavLink>
 
           {/* Auditing */}
-          {/* <NavLink to='/Auditing'> */}
+          <NavLink to='/Auditing'>
             <div className="text-center">
               <img 
                 src="https://img.freepik.com/free-photo/paperwork_1098-18063.jpg?ga=GA1.2.2000051094.1716005427&semt=ais_hybrid" 
@@ -764,7 +764,7 @@ const ServicesOverview = () => {
                 Our auditing and assurance services provide independent evaluations of financial statements to ensure accuracy and compliance. We help identify risks and improve operational efficiency for better business decision-making.
               </p>
             </div>
-          {/* </NavLink> */}
+          </NavLink>
 
           {/* Consulting */}
           <div className="text-center">
