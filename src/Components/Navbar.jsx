@@ -20,13 +20,13 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div style={{ fontFamily: "Century Gothic" }} className="w-full">
-      <div style={{ position: "relative " }}>
+    <div style={{ fontFamily: "Century Gothic" }} className="w-full ">
+      <div style={{ position: "relative  " }}>
         <NavLink to="/">
-          <img
+          {/* <img
             src={logo}
             alt=""
-            className="w-16 lg:w-24 rounded-xl lg:mt-4 lg:mx-24 md:mx-20 "
+            className="w-16 lg:w-24 rounded-xl lg:mt-4 lg:mx-24 md:mx-20  "
             style={{
               position: "absolute",
               left: 0,
@@ -34,7 +34,19 @@ const Navbar = () => {
               cursor: "pointer",
               zIndex: 1,
             }}
-          />
+          /> */}
+
+
+<img
+  src={logo}
+  alt=""
+  className="w-16 lg:w-20 rounded-xl cursor-pointer absolute left-0 
+  lg:top-2   lg:mt-4 lg:mx-24 md:mx-20  sm:mx-10  mx-5  z-10
+  
+       top-4 right-5 md:top-5    
+            md:right-20 lg:right-32  sm:right-10 sm:top-4  "
+/>
+
         </NavLink>
         {/* <video
           className="w-full h-auto"
@@ -52,13 +64,13 @@ const Navbar = () => {
 
       {/* navbar */}
       <nav>
-        <div className="container mx-auto flex justify-between items-center cursor-pointer ">
+        <div className="container mx-auto flex justify-between items-center cursor-pointer  ">
           <div className="left flex items-center ">
-            <div className="absolute lg:top-5 top-0 right-0 md:top-5   
-            md:right-20 lg:right-32 p-2 bg-blue-600  text-white rounded-full">
+            <div className="absolute lg:top-5 top-4 right-5 md:top-5    
+            md:right-20 lg:right-32  sm:right-10 sm:top-4   p-2 bg-blue-600  text-white rounded-full">
               <FiMenu
                 onClick={() => setMenu(true)}
-                className="lg:text-4xl md:text-4xl text-2xl cursor-pointer"
+                className="lg:text-4xl md:text-4xl text-4xl cursor-pointer"
               />
             </div>
           </div>
@@ -68,7 +80,12 @@ const Navbar = () => {
               <section className="text-black bg-gray-100 flex-col absolute left-0 top-0 h-screen p-8 gap-8 z-50 w-full text-center flex">
                 <IoCloseOutline
                   onClick={() => setMenu(false)}
-                  className="mt-0 mb-8 text-5xl text-white rounded-full p-2 cursor-pointer bg-blue-600 absolute  md:top-5 md:right-20  right-0 top-0  lg:top-5 lg:right-32"
+                  className="mt-0 mb-8 text-5xl text-white rounded-full p-2
+                   cursor-pointer bg-blue-600 absolute  
+                 
+                   
+                   lg:top-5 top-4 right-5 md:top-5    
+            md:right-20 lg:right-32  sm:right-10 sm:top-4 "
                 />
 
                 <NavLink

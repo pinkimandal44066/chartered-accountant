@@ -23,10 +23,11 @@ const Contactus = () => {
 
   return (
     <>
+    
      <img src={img4} alt=''/>
     {/* <SideFrom /> */}
     
-      <div className="font-Poppins mt-10">
+      <div className="font-Poppins mt-10 ">
         {/* location part */}
 
         <div>

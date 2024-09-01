@@ -36,7 +36,7 @@ const Homevideo = () => {
           />
         </NavLink> */}
         <video
-          className="w-full h-auto"
+          className="w-full h-auto bg-black"
           autoPlay
           loop
           muted
@@ -52,11 +52,12 @@ const Homevideo = () => {
       <nav>
         <div className="container mx-auto flex justify-between items-center cursor-pointer">
           <div className="left flex items-center ">
-            <div className="absolute lg:top-5 top-0 
-              right-0 md:top-5 md:right-20 lg:right-32 p-2 bg-blue-700  text-white rounded-full ">
+            <div className="absolute lg:top-6 top-4
+              right-5 md:top-5 md:right-20 lg:right-32 p-2  sm:top-4  sm:right-10 
+               bg-blue-700  text-white rounded-full ">
               <FiMenu
                 onClick={() => setMenu(true)}
-                className="lg:text-4xl md:text-4xl text-2xl cursor-pointer"
+                className="lg:text-4xl md:text-4xl text-4xl cursor-pointer"
               />
             </div>
           </div>
@@ -68,7 +69,11 @@ const Homevideo = () => {
                   onClick={() => setMenu(false)}
                  
                   className="mt-0 mb-8 text-5xl  text-white rounded-full p-2 cursor-pointer
-                   bg-blue-600 absolute  md:top-5 md:right-20  right-0 top-0  lg:top-5 lg:right-32
+                   bg-blue-600 absolute
+
+
+                        lg:top-5 top-4 right-5 md:top-5    
+            md:right-20 lg:right-32  sm:right-10 sm:top-4 
                    "
                 />
 
