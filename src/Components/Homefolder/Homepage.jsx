@@ -8,7 +8,7 @@ const Homepage = () => {
             <Homevideo />
       <NavbarScrollingpage />
       <Home />
-      {/* <SideFrom /> */}
+      <SideFrom />
     </div>
   );
 };

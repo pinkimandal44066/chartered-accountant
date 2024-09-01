@@ -71,7 +71,7 @@ const SideFrom = ({ information }) => {
       {/* Modal toggle */}
       <button
         onClick={openModal}
-        className="top-80 right-0 h-36 w-10 z-[999] fixed transform -translate-x-1/2 -translate-y-1/2 bg-[#E79F30] md:text-xl lg:text-2xl text-xl rounded-md shadow-md text-white"
+        className="top-80 right-0 h-36 w-10 z-[999] fixed transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 md:text-xl lg:text-2xl text-xl rounded-md shadow-md text-white"
         type="button"
         style={{
           writingMode: "vertical-rl",
@@ -90,7 +90,7 @@ const SideFrom = ({ information }) => {
             <form onSubmit={onSubmit}>
               <div className="relative bg-[#FEF3E2] rounded-lg shadow">
                 {/* Modal header */}
-                <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 bg-[#E79F30]">
+                <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 bg-blue-600">
                   <h3 className="--text-center text-2xl block w-[100%] text-center font-semibold text-white ">
                     Add Your Information
                   </h3>
@@ -119,7 +119,7 @@ const SideFrom = ({ information }) => {
                 {/* Modal body */}
                 <div className="p-4 md:p-5 space-y-4">
                   <div className="bg-[#FEF3E2] ">
-                    <h1 className="lg:text-5xl text-3xl font-semibold text-[#E79F30] text-center mt-2 ">
+                    <h1 className="lg:text-5xl text-3xl font-semibold text-blue-600 text-center mt-2 ">
                       Reach out to us
                     </h1>
                     <div className="flex flex-col justify-evenly items-center lg:mx-40 mx-5 mt-10 ">
@@ -192,7 +192,7 @@ const SideFrom = ({ information }) => {
                         </div>
 
                         <div className="flex justify-center items-center mt-10">
-                          <div className="bg-[#E79F30]  rounded-md shadow-md max-w-md w-full">
+                          <div className="bg-blue-600  rounded-md shadow-md max-w-md w-full">
                             <h1 className="text-lg font-semibold mb-4 px-3">
                               Your Message{" "}
                             </h1>
@@ -212,7 +212,7 @@ const SideFrom = ({ information }) => {
                     </div>
 
                     <div className="flex items-center justify-center mt-10">
-                      <button className="mb-10 py-3 px-28 rounded-sm bg-[#E79F30] text-white font-semibold text-2xl">
+                      <button className="mb-10 py-3 px-28 rounded-sm bg-blue-600 text-white font-semibold text-2xl">
                         SUBMIT
                       </button>
                     </div>
